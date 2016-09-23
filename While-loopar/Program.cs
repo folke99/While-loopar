@@ -10,6 +10,18 @@ namespace While_loopar
     {
         static void Main(string[] args)
         {
-        }
-    }
+            /*
+            int n = 0;
+            while (n++ < 100)
+            {
+                Console.WriteLine(n);
+            }
+            Console.ReadKey();
+            */
+            Console.WriteLine("Skriv in dit lösenord");
+
+            bool n = false;
+            while
+        }//Main
+    }//class
 }
