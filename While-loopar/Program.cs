@@ -68,7 +68,7 @@ namespace While_loopar
             }
             */
             //Övning 2.4
-
+            /*
             Console.WriteLine("Gissa ett tal mellan 1 och 100: ");
             Random rnd = new Random();
             bool villkår = true;
@@ -96,8 +96,48 @@ namespace While_loopar
 
             }
             Console.ReadKey();
-            
+            */
+            //Övning 2.5
+            /*
 
+            Console.WriteLine("1k lax fibbonacci!");            
+            int z = 0;
+            int y = 1;
+            Console.Write("Fibbonacci blir: ");
+            bool i = true;
+            while (i)
+            {
+                int nyttVärde = z;
+                z = y;
+                y = nyttVärde + y;
+                if (y>1000000)
+                {                   
+                    i = false;
+                }
+                Console.Write(z + " ");
+            }
+            Console.ReadKey();
+            */
+            //Övning 2.6
+
+            Console.WriteLine("Pengar på kontot:");
+            double pengar = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ränta");
+            double ränta = double.Parse(Console.ReadLine());
+            Console.WriteLine("Mål");
+            int mål = int.Parse(Console.ReadLine());
+
+            int i = 0;
+            double y = 0;
+            while (y <= mål)
+            {
+                y = ((ränta/100) + 1) * pengar;
+                y = y * i;
+                i++;
+            }
+
+            Console.WriteLine(i + "År");
+            Console.ReadKey();
         }//Main
     }//class
 }
