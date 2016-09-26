@@ -119,7 +119,7 @@ namespace While_loopar
             Console.ReadKey();
             */
             //Övning 2.6
-
+            /*
             Console.WriteLine("Pengar på kontot:");
             double pengar = double.Parse(Console.ReadLine());
             Console.WriteLine("Ränta");
@@ -128,16 +128,18 @@ namespace While_loopar
             int mål = int.Parse(Console.ReadLine());
 
             int i = 0;
-            double y = 0;
-            while (y <= mål)
+            double y = pengar;
+            while (y < mål)
             {
-                y = ((ränta/100) + 1) * pengar;
-                y = y * i;
+                y = ((ränta/100) + 1) * y;
+                
                 i++;
             }
 
-            Console.WriteLine(i + "År");
+            Console.WriteLine(i + "År innan saldot når: " + y);
             Console.ReadKey();
+            */
+            //Övning 2.7
         }//Main
     }//class
 }
