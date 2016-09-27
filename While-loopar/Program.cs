@@ -140,6 +140,43 @@ namespace While_loopar
             Console.ReadKey();
             */
             //Övning 2.7
+            /*
+            int i = 2016;
+            while (i < 2050)
+            {
+                if (DateTime.IsLeapYear(i))
+                {
+                    Console.WriteLine(i + "Är ett skottår!");
+                }
+
+                i++;
+            }
+                
+            Console.ReadKey();
+            */
+            //Övning 2.8
+            int år = DateTime.Now.Year;           
+            int i = 1;
+            int månad = 1;
+            int dagarMånad = DateTime.DaysInMonth(år, månad);
+            while (månad < 13)
+            {
+                while (i % 7 == 0 || i == 1)
+                {
+                    if (i > dagarMånad)
+                    {
+                        i = 1;
+                        månad++;
+                    }
+
+                    Console.WriteLine(år + "/" + månad + "/" + i);
+                    break;
+                }
+
+                i++;
+            }
+            Console.ReadKey();
+
         }//Main
     }//class
 }
