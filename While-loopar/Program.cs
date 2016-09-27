@@ -155,7 +155,7 @@ namespace While_loopar
             Console.ReadKey();
             */
             //Övning 2.8
-
+            /*
             Console.WriteLine("Start");
 
             DateTime aDate = new DateTime(2016, 01, 01);
@@ -172,7 +172,7 @@ namespace While_loopar
             Console.WriteLine("Klar");
 
             Console.ReadKey();
-
+            */
         }//Main
     }//class
 }
