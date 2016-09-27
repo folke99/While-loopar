@@ -155,26 +155,22 @@ namespace While_loopar
             Console.ReadKey();
             */
             //Övning 2.8
-            int år = DateTime.Now.Year;           
-            int i = 1;
-            int månad = 1;
-            int dagarMånad = DateTime.DaysInMonth(år, månad);
-            while (månad < 13)
+
+            Console.WriteLine("Start");
+
+            DateTime aDate = new DateTime(2016, 01, 01);
+
+            while (aDate.Year < 2017)
             {
-                while (i % 7 == 0 || i == 1)
+                if (aDate.DayOfWeek == DayOfWeek.Monday)
                 {
-                    if (i > dagarMånad)
-                    {
-                        i = 1;
-                        månad++;
-                    }
-
-                    Console.WriteLine(år + "/" + månad + "/" + i);
-                    break;
+                    Console.WriteLine(aDate.ToShortDateString());
                 }
-
-                i++;
+                aDate = aDate.AddDays(1);
             }
+
+            Console.WriteLine("Klar");
+
             Console.ReadKey();
 
         }//Main
